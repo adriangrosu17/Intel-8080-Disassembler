@@ -12,7 +12,6 @@ OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
 DEPS := $(OBJS:.o=.d)
 ifeq ($(WIN), y)
 	TARGET_ARCH = x86_64
-#	LDFLAGS += -lmingw32
 	CC = $(TARGET_ARCH)-w64-mingw32-gcc
 	CXX = $(TARGET_ARCH)-w64-mingw32-g++
 	EXT = exe
