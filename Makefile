@@ -6,7 +6,6 @@ CXX = g++
 TARGET_EXEC ?= 8080_disass.$(EXT)
 BUILD_DIR ?= build
 SRC_DIRS ?= src
-DEBUG ?= n
 SRCS := $(shell find $(SRC_DIRS) -name *.cpp -or -name *.c -or -name *.s)
 OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
 DEPS := $(OBJS:.o=.d)
