@@ -42,7 +42,7 @@ uint8_t *LoadBinary(const char *binary_name, uint16_t *size)
             }
             if(0 != fclose(file))
             {
-                printf("Error closing file %s\n", bin);
+                printf("Error closing file %s\n", binary_name);
             }
         }
     }
